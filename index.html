@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
     integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
@@ -16,6 +16,7 @@
    crossorigin=""></script> 
 
    <script src="app.js" defer></script>
+   <link rel="stylesheet" href="style.css">
    
    
     <title>Fetch JSON from API and map lat lon</title>
@@ -25,11 +26,22 @@
 <body>
 <h1>Where is the ISS?</h1>
 
-<p>latitude: <span id="lat"> </span><br /> 
-longitude: <span id="lon"> </span> 
+<p>latitude: <span id="lat"> </span>° <br /> 
+longitude: <span id="lon"> </span>°
 </p>
 
-<div id="issMap"></div>
+<div id="issMap"></div>  <br /> 
+
+
+
+    <button id="realtime">
+    Start Real Time
+      </button>
+
+    <button id="stoprealtime">
+    Stop Real Time
+      </button>
+
 
 </body>
 </html>
